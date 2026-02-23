@@ -1,0 +1,429 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family:"Poppins",sans-serif;
+    box-sizing: border-box;
+}
+header{
+    width:100vw;
+    background-color: black;
+    display:flex;
+    justify-content: space-between;
+    padding:  10px 0px;
+    position: sticky;
+    top:0px;
+    z-index: 1;
+}
+/* header>div>ul>li>{
+    list-style: none;
+/* }
+ we ○9an give common styling to header instead of left and right header as bothhave common styling just header>left replace with header>ul>li>a  */
+#header-left{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    gap:20px;
+    margin-left: 10px;
+
+}
+#header-left>h1{
+    color:white;
+}
+#header-left>ul{
+    display:flex;
+    gap:20px;
+}
+#header-left>ul>li{
+    list-style: none;
+}
+#header-left>ul>li>a{
+    text-decoration: none;
+    color: #fff;
+     padding: 5px 10px;
+
+
+}
+
+#header-left>ul>li>a:hover{
+    background-color: #333;
+   border-radius: 10px;
+    /* padding: 5px 10px; */
+    transition: .5 ease;  
+}
+#header-right{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    gap:20px;
+    margin-right:10px;
+}
+#header-right>ul>li{
+    color:white;
+}
+#header-right>ul{
+    display:flex;
+    gap:20px;
+}
+#header-right>ul>li{
+    list-style: none;
+}
+#header-right>ul>li>a{
+    text-decoration: none;
+    color: #fff;
+} 
+#header-right>button{
+    padding: 8px;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: .9rem; /* 1 rem = 16 px bydefault screen font*/
+}
+#header-right>button:hover{
+  background-color: rgba(247,247,247,0.8);
+  transition: .3s ease;
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 0px;
+    height: 60px;
+}
+nav>h1{
+    margin-right:80px;
+    margin-left: 20px;
+}
+nav>h1:hover{
+    background-color: #3333336e;
+    border-radius: 10px;
+    padding:10px;
+    /* background-color: #fff; */
+    transition: .1s ease;
+}
+nav>ul{
+    display: flex;
+    gap:20px;
+}
+nav>ul>li{
+    list-style: none;
+}
+nav>ul>li>a{
+    text-decoration: none;
+    color: #6B6B6B;
+    font-size: 15px;
+}
+nav>ul>li>a:hover{
+    color: black;
+    transition: .4s ease;
+}
+
+#hero-section{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    justify-content: space-around;
+    gap:80px;
+    width:100vw;
+
+}
+
+#hero-section>div>p>span>a{
+    color: black;
+}
+#hero-section>div>p>span>a:hover{
+background-color: white;
+border-radius: 20px;
+}
+
+#hero-section>div>h1{
+    font-size: 3.25rem;
+    font-weight: 700;
+    line-height: 64px;
+}
+.hero-box{
+    width:35%;
+  
+}
+#hero-section-left{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+#hero-section-left>p>span{
+    margin-right:10px;
+}
+#hero-section-left>div>div>input{
+    width: 350px;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 20px 30px;
+    border-style: none;
+    background-color: #e1e1e1;
+}
+.hero-location{
+    position: relative;
+    top:0px;
+    
+    
+}
+.hero-location>div>{
+    padding: 10px 10px 10px;
+    background-color: red;
+
+}
+.mid-hero{
+    width:0px;
+    height:100px;
+    border: .5px solid black;
+    position: absolute;
+    top: 45px;
+    left:22px;
+    z-index: 1;
+
+}
+.p,.d{   /* we ○9an use the class name to apply on both by comma .p,.d as both class*/
+    position: relative;
+    top:0px;
+
+}
+.p-sp,.d-sp{
+    position: absolute;
+    top:45px;
+    left:20px;}
+
+
+
+#hero-section-left>div>div>input{
+    width:350px;
+    height:50px;
+    border-radius: 10px;
+    margin-top:10px;
+}
+#hero-section-right{
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#button{
+    padding: 8px 24px;
+    border-radius:10px;
+    border-style:none;
+    font-weight:600;
+    font-size:15px;
+    margin-right:10px;
+    padding-left: 30px;
+}
+.btn1{
+    background-color: black;
+    color: #fff;
+}
+.btn2{ 
+    background-color: black;
+    color: #fff;
+}
+#sug-section{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    gap: 10px;
+}
+#sug{
+    width: 800px;
+    height: 200px;
+   
+    display:flex;
+    padding: 16px;
+    
+    gap:40px;
+}
+.sub{
+    /* display:flex;
+    flex-wrap: wrap; */
+    gap: 20px;
+     background-color:whitesmoke;
+}
+.sug>div>h3{
+    font-size:20px;
+
+}
+.sug>div>p{
+  font-size: 10px;
+}
+.sug>div>button{
+    padding: 5px 8px;
+    border-style : none;
+    background-color: #fff;
+    border-radius: 20px;
+}
+.sug>div>button:hover{
+    background-color: #F3F3F3;
+    transition: .3s ease;
+}
+.sug>div>img{
+    height: 128px;
+    width:128px;
+}
+#plan-main{
+  width:90vw;
+  margin: auto;  
+
+}
+.bottom{
+    display:flex;
+    align-items: center;
+    gap: 40px;
+}
+.left-plan{
+   display:flex;
+  width:calc(100%-334px);
+  background-color:#9dcdd9 ;
+  border-radius: 20px;
+
+}
+.left-sub{
+    padding:20px;
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+}
+.left-sub>h1{
+    font-size: 50px;
+}
+.time-date-plan{
+    padding : 8px 20px;
+}
+.right-sub{
+    
+}
+/* .right-sub>img{
+    position: absolute;
+    top: 0px;
+} */
+.right-plan{
+width: 40% ;
+}
+.p-under{
+    width: 100%;
+
+}
+footer{
+    background-color: black;
+    display:flex;
+    justify-content:center;
+  
+   
+   
+}
+#logo{
+    display:flex;
+    flex-direction:column;
+    gap:40px;
+}
+.main{
+    width:80vw;
+    display:flex;
+    flex-direction:column;
+   gap:40px;
+
+}
+
+#logo p{
+    color:white;
+    font-weight: 400;
+    font-size: 30px;
+  
+}
+#logo a{
+    text-decoration: none;
+    color:white;
+    font-size:20px;
+}
+#nav{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:40px;
+  
+}
+
+#nav a{
+    text-decoration: none;
+    color:white;
+}
+#nav a:hover{
+color:#dcdcdc;
+transition: a .3s ease;
+}
+#nav ul>li{
+    list-style:none;
+}
+#nav ul{
+    display:flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.nav-box{
+    width: 200px;
+    display:flex;
+    justify-content: space-between;
+}
+#nav h4{
+    color: white;
+    margin-bottom:20px;
+}
+#so ul>li{
+    list-style: none;
+}
+#so a{
+    text-decoration: none;
+    color:white;
+    font-size: 25px;
+    padding : 5px 8px;
+    border-radius: 10px;
+}
+#so a:hover{
+    background-color: #6b6b6b53;
+}
+#app {
+    display: flex;
+    gap: 40px;
+    align-items:left;
+}
+#app img{
+    width: 200px;
+}
+#priv{
+    display: flex;
+    
+}
+
+
+
+
+
+@media screen and (max-width:934px){
+#header-left>ul{
+    display: none;
+}
+#header-right>ul{
+    display:none;
+}
+nav>ul{
+    display:none;
+}
+#hero-section{
+    flex-direction:column;
+}
+#hero-section-right{
+   display:none;
+}
+#hero-section-hide{
+    display:block;
+
+}
+#hero-section-right{
+    display:none;
+}}
